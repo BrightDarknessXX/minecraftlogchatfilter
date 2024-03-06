@@ -18,7 +18,7 @@ FOR %%x in ("*.log") DO (
 
         set "rendir=!chdTMP!\!filename!"
         ren !rendir! !newname!
-        echo !newname! distilled.
+        echo %%x distilled.
     )
 )
 
