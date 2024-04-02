@@ -14,7 +14,7 @@ FOR %%x in ("*.log") DO (
     if exist "!chkfile!" (
         echo !newname! already exists.
     ) else (
-        type %%x | find /i "Chat" >> !chdTMPlogfile!
+        type %%x | find "[CHAT]" >> !chdTMPlogfile!
 
         set "rendir=!chdTMP!\!filename!"
         ren !rendir! !newname!
